@@ -1,0 +1,104 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.back {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bb2121;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #db2f2f;
+        box-shadow: 0px 0px 10px rgb(202, 29, 29);
+    }
+}
+
+.wrapper {
+    .header {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .search {
+        text-align: center;
+        margin-top: 30px;
+
+        input {
+            height: 40px;
+            max-width: 400px;
+            border-radius: 5px;
+            border: none;
+            background-color: #cacaca;
+            margin: 0 10px 0 10px;
+            padding: 0 10px 0 10px;
+            font-size: 20px;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: #bb2121;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #db2f2f;
+                box-shadow: 0px 0px 10px rgb(202, 29, 29);
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        max-width: 800px;
+        margin: 40px auto;
+
+        .trackCard {
+            margin: 0 auto;
+            background-color: rgb(64, 64, 65);
+            border: 2px solid rgb(202, 29, 29);
+            border-radius: 10px;
+            width: 90%;
+            min-height: 20px;
+            margin-bottom: 10px;
+            padding: 10px 0 10px 10px;
+            color: #e6e4e4;
+
+            &:hover {
+                box-shadow: 0px 0px 10px rgb(202, 29, 29);
+            }
+
+            .trackInfo {
+                margin-bottom: 20px;
+
+                .artist {
+                    margin: 20px 0 10px 0;
+                }
+
+                .name {
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    color: #fff;
+                }
+            }
+
+            a {
+                color: rgb(141, 195, 250);
+            }
+        }
+    }
+}

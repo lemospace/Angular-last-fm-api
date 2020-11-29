@@ -1,0 +1,18 @@
+<button class="back" routerLink="">back to Top 50 hits</button>
+<form class="wrapper" [formGroup]="searchTrack" novalidate>
+    <div class="header">
+        <h1>Search tracks by track name</h1>
+    </div>
+    <div class="search">
+        <input type="text" formControlName="trackNameInput" [(ngModel)]='trackName' placeholder="search here..." />
+        <button (click)='search()'>Search</button>
+    </div>
+
+    <div class="container" *ngIf='response'>
+        <div class="trackCard" *ngFor='let result of response.results.trackmatches.track'>
+            <a href="{{result.url}}">
+                <p>{{result.artist}} - {{result.name}}</p>
+            </a>
+        </div>
+    </div>
+</form>

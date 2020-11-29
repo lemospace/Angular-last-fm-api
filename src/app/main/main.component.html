@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="searchBtn">
+        <button routerLink="/search">Search tracks by track name</button>
+    </div>
+    <div class="header">
+        <h1>Top 50 hits</h1>
+    </div>
+
+    <div class="container" *ngIf='response'>
+        <div *ngFor='let track of response.tracks.track'>
+            <a href="{{track.url}}">
+                <div class=" trackCard">
+                    <div class=" trackInfo">
+                        <p class="artist">{{track.artist.name}}</p>
+                        <p class="name">{{track.name}}</p>
+
+                    </div>
+                    <div class="trackImg">
+                        <img src='{{track.image[2]["#text"]}}' alt="">
+                    </div>
+                    <a href="{{track.artist.url}}"> {{track.artist.name}} page on Last.fm</a>
+
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

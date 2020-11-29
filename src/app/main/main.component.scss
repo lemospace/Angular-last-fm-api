@@ -1,0 +1,82 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.wrapper {
+    .searchBtn {
+        width: 100%;
+        text-align: center;
+
+        button {
+            min-width: 400px;
+            max-width: 750px;
+            height: 70px;
+            border: none;
+            border-radius: 10px;
+            background-color: #bb2121;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #db2f2f;
+                box-shadow: 0px 0px 10px rgb(202, 29, 29);
+            }
+        }
+    }
+
+    .header {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: 40px auto;
+
+        a {
+            text-decoration: none;
+
+            .trackCard {
+                background-color: rgb(64, 64, 65);
+                border: 2px solid rgb(202, 29, 29);
+                border-radius: 10px;
+                width: 250px;
+                height: 350px;
+                text-align: center;
+                margin-bottom: 20px;
+                color: #e6e4e4;
+
+                &:hover {
+                    box-shadow: 0px 0px 10px rgb(202, 29, 29);
+                }
+
+                .trackInfo {
+                    margin-bottom: 20px;
+
+                    .artist {
+                        margin: 20px 0 10px 0;
+                    }
+
+                    .name {
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                }
+
+                a {
+                    color: rgb(141, 195, 250);
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+    }
+}
